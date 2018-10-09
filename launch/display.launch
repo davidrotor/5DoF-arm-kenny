@@ -6,7 +6,7 @@
     default="False" />
   <param
     name="robot_description"
-    textfile="$(find Brazo Robotico.SLDASM)/robots/Brazo Robotico.SLDASM.urdf" />
+    textfile="$(find 5DoF-arm-kenny)/robots/5DoF-arm-kenny.urdf" />
   <param
     name="use_gui"
     value="$(arg gui)" />
@@ -22,5 +22,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find Brazo Robotico.SLDASM)/urdf.rviz" />
+    args="-d $(find 5DoF-arm-kenny)/urdf.rviz" />
 </launch>

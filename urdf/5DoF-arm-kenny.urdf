@@ -1,20 +1,20 @@
 <robot
-  name="Brazo Robotico.SLDASM">
+  name="5DoF-arm-kenny">
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="0.090945 0.15717 0.13966"
+        xyz="0.0909454406425499 -0.13965567381319 0.157171921902302"
         rpy="0 0 0" />
       <mass
-        value="0.043248" />
+        value="0.0432483576430209" />
       <inertia
-        ixx="5.0927E-05"
-        ixy="-1.6674E-23"
-        ixz="-3.0513E-21"
-        iyy="0.0001018"
-        iyz="-1.4004E-22"
-        izz="5.0942E-05" />
+        ixx="5.09268075478606E-05"
+        ixy="2.59188777664549E-21"
+        ixz="-1.66744586170117E-23"
+        iyy="5.09419397716315E-05"
+        iyz="3.25596142315923E-21"
+        izz="0.000101803874783028" />
     </inertial>
     <visual>
       <origin
@@ -22,12 +22,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Brazo Robotico.SLDASM/meshes/base_link.STL" />
+          filename="package://5DoF-arm-kenny/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -36,7 +36,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Brazo Robotico.SLDASM/meshes/base_link.STL" />
+          filename="package://5DoF-arm-kenny/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -44,17 +44,17 @@
     name=" link1">
     <inertial>
       <origin
-        xyz="0.0305 0.0088975 -0.020204"
+        xyz="0.0305 0.00889748247239139 -0.0202038963244885"
         rpy="0 0 0" />
       <mass
-        value="0.019155" />
+        value="0.0191547172964518" />
       <inertia
-        ixx="8.7903E-06"
-        ixy="-1.3487E-10"
-        ixz="-6.3527E-21"
-        iyy="1.5538E-05"
-        iyz="-1.3803E-06"
-        izz="1.1421E-05" />
+        ixx="8.79025148291327E-06"
+        ixy="-1.3486857261949E-10"
+        ixz="-7.19978005166155E-21"
+        iyy="1.55381672632276E-05"
+        iyz="-1.38029842216372E-06"
+        izz="1.14205522352593E-05" />
     </inertial>
     <visual>
       <origin
@@ -62,12 +62,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Brazo Robotico.SLDASM/meshes/ link1.STL" />
+          filename="package://5DoF-arm-kenny/meshes/ link1.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.75294 0.75294 0.75294 1" />
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
       </material>
     </visual>
     <collision>
@@ -76,7 +76,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Brazo Robotico.SLDASM/meshes/ link1.STL" />
+          filename="package://5DoF-arm-kenny/meshes/ link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -100,17 +100,17 @@
     name="link2">
     <inertial>
       <origin
-        xyz="1.7498E-13 -0.03655 0.070393"
+        xyz="-0.0196142316595342 -0.0365500000000025 0.067604886102941"
         rpy="0 0 0" />
       <mass
-        value="0.024964" />
+        value="0.0249636399428571" />
       <inertia
-        ixx="6.8484E-05"
-        ixy="7.0388E-19"
-        ixz="-1.1004E-16"
-        iyy="4.8155E-05"
-        iyz="-1.8201E-19"
-        izz="2.2861E-05" />
+        ixx="6.49415256404332E-05"
+        ixy="-1.41623908780919E-18"
+        ixz="1.22089450266614E-05"
+        iyy="4.81551547315452E-05"
+        iyz="-7.83505476210228E-21"
+        izz="2.64028209000994E-05" />
     </inertial>
     <visual>
       <origin
@@ -118,7 +118,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Brazo Robotico.SLDASM/meshes/link2.STL" />
+          filename="package://5DoF-arm-kenny/meshes/link2.STL" />
       </geometry>
       <material
         name="">
@@ -132,7 +132,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Brazo Robotico.SLDASM/meshes/link2.STL" />
+          filename="package://5DoF-arm-kenny/meshes/link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -156,17 +156,17 @@
     name="link3">
     <inertial>
       <origin
-        xyz="0.056755 0.035129 -0.0054655"
+        xyz="0.0284085212669502 0.0351285785408569 -0.0179458094639415"
         rpy="0 0 0" />
       <mass
-        value="0.029564" />
+        value="0.0295644975322909" />
       <inertia
-        ixx="7.0409E-06"
-        ixy="9.7992E-08"
-        ixz="-1.0106E-06"
-        iyy="8.6799E-05"
-        iyz="-6.6761E-08"
-        izz="8.6975E-05" />
+        ixx="1.33936846118549E-05"
+        ixy="1.12377677320612E-07"
+        ixz="-2.16441718720014E-05"
+        iyy="8.67988836354431E-05"
+        iyz="-3.78232802917669E-08"
+        izz="8.06221951181824E-05" />
     </inertial>
     <visual>
       <origin
@@ -174,7 +174,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Brazo Robotico.SLDASM/meshes/link3.STL" />
+          filename="package://5DoF-arm-kenny/meshes/link3.STL" />
       </geometry>
       <material
         name="">
@@ -188,7 +188,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Brazo Robotico.SLDASM/meshes/link3.STL" />
+          filename="package://5DoF-arm-kenny/meshes/link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -212,17 +212,17 @@
     name="link 4">
     <inertial>
       <origin
-        xyz="-0.018818 -0.035 0.0037361"
+        xyz="-0.0173898278086403 -0.0350000000000029 0.0380464145686477"
         rpy="0 0 0" />
       <mass
-        value="0.0057062" />
+        value="0.0057062055751799" />
       <inertia
-        ixx="4.8474E-06"
-        ixy="-2.0858E-20"
-        ixz="2.682E-07"
-        iyy="2.3034E-06"
-        iyz="8.285E-21"
-        izz="6.7343E-06" />
+        ixx="4.84737863927083E-06"
+        ixy="8.43062480314046E-20"
+        ixz="2.68203607851555E-07"
+        iyy="2.30339791212611E-06"
+        iyz="1.10802497412703E-19"
+        izz="6.7343095380978E-06" />
     </inertial>
     <visual>
       <origin
@@ -230,12 +230,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Brazo Robotico.SLDASM/meshes/link 4.STL" />
+          filename="package://5DoF-arm-kenny/meshes/link 4.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -244,7 +244,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Brazo Robotico.SLDASM/meshes/link 4.STL" />
+          filename="package://5DoF-arm-kenny/meshes/link 4.STL" />
       </geometry>
     </collision>
   </link>
