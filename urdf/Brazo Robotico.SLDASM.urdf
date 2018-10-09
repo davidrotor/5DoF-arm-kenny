@@ -1,0 +1,267 @@
+<robot
+  name="Brazo Robotico.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.090945 0.15717 0.13966"
+        rpy="0 0 0" />
+      <mass
+        value="0.043248" />
+      <inertia
+        ixx="5.0927E-05"
+        ixy="-1.6674E-23"
+        ixz="-3.0513E-21"
+        iyy="0.0001018"
+        iyz="-1.4004E-22"
+        izz="5.0942E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Brazo Robotico.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Brazo Robotico.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name=" link1">
+    <inertial>
+      <origin
+        xyz="0.0305 0.0088975 -0.020204"
+        rpy="0 0 0" />
+      <mass
+        value="0.019155" />
+      <inertia
+        ixx="8.7903E-06"
+        ixy="-1.3487E-10"
+        ixz="-6.3527E-21"
+        iyy="1.5538E-05"
+        iyz="-1.3803E-06"
+        izz="1.1421E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Brazo Robotico.SLDASM/meshes/ link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Brazo Robotico.SLDASM/meshes/ link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="primera rotacion"
+    type="revolute">
+    <origin
+      xyz="0.11396 -0.095001 0.16267"
+      rpy="1.5708 -1.4373E-17 -2.9046" />
+    <parent
+      link="base_link" />
+    <child
+      link=" link1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="1.7498E-13 -0.03655 0.070393"
+        rpy="0 0 0" />
+      <mass
+        value="0.024964" />
+      <inertia
+        ixx="6.8484E-05"
+        ixy="7.0388E-19"
+        ixz="-1.1004E-16"
+        iyy="4.8155E-05"
+        iyz="-1.8201E-19"
+        izz="2.2861E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Brazo Robotico.SLDASM/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Brazo Robotico.SLDASM/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j1"
+    type="revolute">
+    <origin
+      xyz="0.0146 0.0205 0"
+      rpy="1.5708 -2.9698E-15 -2.9101" />
+    <parent
+      link=" link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.056755 0.035129 -0.0054655"
+        rpy="0 0 0" />
+      <mass
+        value="0.029564" />
+      <inertia
+        ixx="7.0409E-06"
+        ixy="9.7992E-08"
+        ixz="-1.0106E-06"
+        iyy="8.6799E-05"
+        iyz="-6.6761E-08"
+        izz="8.6975E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Brazo Robotico.SLDASM/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Brazo Robotico.SLDASM/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j2"
+    type="revolute">
+    <origin
+      xyz="0 0 0.14"
+      rpy="3.1416 -0.93185 4.9195E-14" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link 4">
+    <inertial>
+      <origin
+        xyz="-0.018818 -0.035 0.0037361"
+        rpy="0 0 0" />
+      <mass
+        value="0.0057062" />
+      <inertia
+        ixx="4.8474E-06"
+        ixy="-2.0858E-20"
+        ixz="2.682E-07"
+        iyy="2.3034E-06"
+        iyz="8.285E-21"
+        izz="6.7343E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Brazo Robotico.SLDASM/meshes/link 4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Brazo Robotico.SLDASM/meshes/link 4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j3"
+    type="revolute">
+    <origin
+      xyz="0.14 0 0"
+      rpy="1.8459E-14 1.24 -3.1416" />
+    <parent
+      link="link3" />
+    <child
+      link="link 4" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
